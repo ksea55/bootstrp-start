@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>bootstrp start</title>
+	<script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">	
+	<script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/holder/holder.min.js"></script>
+	<style type="text/css">
+		.col-md-4{
+			background-color: #1b6d85;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!--
+			通过使用 .col-md-push-* 和 .col-md-pull-* 类就可以很容易的改变列（column）的顺序。
+		-->
+        <!--原始排版-->
+		<div class="row">
+			<div class="col-md-3" style="background-color: #1b6d85">col-md-3占用3列</div>
+			<div class="col-md-9" style="background-color: #2b542c">col-md-9占用9列</div>
+		</div>
+   		<!--使用pull之后,pull的意思是拉，这个排序就是向左-->
+		<div class="row">
+			<div class="col-md-3 col-md-pull-3" style="background-color: #1b6d85">col-md-3占用3列</div>
+			<div class="col-md-9" style="background-color: #2b542c">col-md-9占用9列</div>
+		</div>
+
+<div class="clearfix" style="margin-top: 10px"></div>
+		<!--使用push之后,pull的意思是推，这个排序就是向右 此刻在这里就呗重叠了-->
+		<div class="row">
+			<div class="col-md-3 col-md-push-6" style="background-color: white">col-md-3占用3列</div>
+			<div class="col-md-9" style="background-color: #2b542c">col-md-9占用9列</div>
+		</div>
+<div class="clearfix" style="margin-top: 10px"></div>
+
+		<!--这里两个同时使用pull与push 顺序就和原始的颠倒过来了-->
+		<div class="row">
+			<div class="col-md-3 col-md-push-9" style="background-color: red">col-md-3占用3列</div>
+			<div class="col-md-9 col-md-pull-3" style="background-color: #2b542c">col-md-9占用9列</div>
+		</div>
+	</div>
+</body>
+</html>

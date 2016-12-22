@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>bootstrp start</title>
+	<script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">	
+	<script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/holder/holder.min.js"></script>
+	<style type="text/css">
+		.col-md-4{
+			background-color: #1b6d85;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!--
+			嵌套列，在bootstrap中嵌套列是将某一个区域嵌套进来布局，此刻当前被嵌套的列在栅格系统有被分成12格小格
+		-->
+
+		<div class="row">
+			<div class="col-md-9" style="background-color: #4cae4c;height: 20px;">
+				原始列，这里原始列 设置成 col-md-9
+			</div>
+			<div class="clearfix"></div>
+			 <!--基于上面的 col-md-9进行嵌套-->
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-4">嵌套的列1</div>
+					<div class="col-md-4 col-md-offset-1">嵌套的列2</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

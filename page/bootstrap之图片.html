@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>bootstrp start</title>
+	<script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">	
+	<script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/holder/holder.min.js"></script>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		   <p>
+			   响应式图片
+			   在 Bootstrap 版本 3 中，通过为图片添加 .img-responsive 类可以让图片支持响应式布局。
+			   其实质是为图片设置了 max-width: 100%; 和 height: auto; 属性，从而让图片在其父元素中更好的缩放。
+			   SVG 图像和 IE 8-10
+			   在 Internet Explorer 8-10 中，设置为 .img-responsive 的 SVG 图像显示出的尺寸不匀称。为了解决这个问题，在出问题的地方添加 width: 100% \9;
+			   即可。Bootstrap 并没有自动为所有图像元素设置这一属性，因为这会导致其他图像格式出现错乱。
+		   </p>
+			<div class="row">
+				<!--对图片加上img-responsive类样式之后，图片就自动响应时布局-->
+				<img src="holder.js/800x300" class="img-responsive">
+			</div>
+		<br/><br/><br/><br/>
+		<p>bootstrap 图片形状</p>
+		<div class="row">
+			<!--圆形   img-circle  -->
+			<img src="holder.js/300x300" class="img-circle">
+			<img src="holder.js/300x300" class="img-rounded">
+			<img src="holder.js/300x300" class="img-thumbnail">
+		</div>
+	</div>
+</body>
+</html>

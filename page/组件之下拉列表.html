@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>bootstrp start</title>
+	<script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">	
+	<script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/holder/holder.min.js"></script>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<div class="dropdown">
+			<a href="#" data-toggle="dropdown" class="btn btn-info">查询订单<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><span class="dropdown-header">一级订单</span></li>
+				<li><a href="#">订单号</a></li>
+				<li class="disabled"><a href="javascript:;">运单号</a></li>
+				<li><a href="#">商家运单号</a></li>
+				<li class="divider"></li>
+				<li><span class="dropdown-header">二级订单</span></li>
+				<li><a href="#">菜鸟单号</a></li>
+				<li><a href="#">风云单号</a></li>
+			</ul>
+		</div>
+		<p>
+			通过bootstrap提供的组件之下拉列表，我们可以快速轻松的制作一个菜单
+			<br/>
+			首先菜单栏必须包含在 <code>.dropdown</code>类样式中
+			<br/>
+			其次这里的的菜单按钮可以是 btn，也可以 A 标签
+			非常重要的一点  <code>data-toggle="dropdown"</code>必须有，这里bootstrap的js联动
+			<br/>
+			一般在制作菜单中，下拉列表我们都使用ul来进行 这里 在ul中我们需要使用<code>.dropdown-menu</code>
+			下拉菜单类样式
+			<br/>
+			菜单分组标题信息<code>.dropdown-header</code>
+			<br/>
+			菜单分隔符 就使用<code>.divider</code>类样式
+			<br/>
+			当需要禁用某个菜单 就使用<code>.disabled</code>类样式
+		</p>
+	</div>
+</body>
+</html>

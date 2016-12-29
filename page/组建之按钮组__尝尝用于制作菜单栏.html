@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>bootstrp start</title>
+	<script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">	
+	<script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/holder/holder.min.js"></script>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<div class="container">
+			<div class="btn-group">
+				<a href="#" class="btn btn-primary">主页</a>
+				<a href="#" class="btn btn-primary">数据处理中心</a>
+				<a href="#" class="btn btn-primary">订单查询</a>
+			</div>
+		<p>
+			通过类样式<code>.btn-group</code>可以把一组菜单放在一起
+		</p>
+		<br/>
+		<br/>
+		<div class="btn-toolbar">
+			<div class="btn-group btn-group-lg">
+				<a href="#" class="btn btn-primary">数据处理中心</a>
+				<a href="#" class="btn btn-primary">数据1</a>
+				<a href="#" class="btn btn-primary">数据2</a>
+			</div>
+			<div class="btn-group btn-group-sm">
+				<a href="#" class="btn btn-primary">订单查询</a>
+				<a href="#" class="btn btn-primary">运单号</a>
+				<a href="#" class="btn btn-primary">订单号</a>
+			</div>
+			<div class="btn-group btn-group-xs">
+				<a href="#" class="btn btn-primary">帮助</a>
+			</div>
+		</div>
+			<p>
+				通过类样式<code>.btn-toolbar</code>我们可以制作一个工具栏
+				而工具栏里面是放的<code>.btn-group</code>组
+				这里还可以通过类样式
+				<ul>
+					<li><code>.btn-group-lg</code>将一组图标设置成最大尺寸</li>
+					<li><code>.btn-group-sm</code>将一组图标设置成中等大尺寸</li>
+					<li><code>.btn-group-xs</code>将一组图标设置成最小尺寸</li>
+				</ul>
+			</p>
+		<br/><br/>
+		<div class="btn-group">
+			<a href="#" class="btn btn-primary">主页</a>
+			<a href="#" class="btn btn-primary">数据查询</a>
+			<div class="btn-group">
+				<a href="#"  data-toggle="dropdown" class="dropdown-toggle btn btn-primary">
+					关于我们<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">建议</a></li>
+					<li><a href="#">企业风采</a></li>
+				</ul>
+			</div>
+		</div>
+       <p>
+		   在使用按钮组与下拉列表组合使用的时候，而成为一个按钮组的时候
+		   <br/>
+		   这里下拉列表就要使用类样式<code>.btn-group</code>而这里就不能使用类样式<code>.dropdown</code>
+		   <br/>
+		   但是这里下拉列表按钮 此刻在class中需使用类样式<code>.dropdown-toggle</code>
+	   </p>
+<br/><br/><br/>
+		<div class="btn-group-vertical">
+			<div class="btn-group">
+				<a href="#"  data-toggle="dropdown" class="dropdown-toggle btn btn-primary">
+					主页<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">建议</a></li>
+					<li><a href="#">企业风采</a></li>
+				</ul>
+			</div>
+			<div class="btn-group">
+				<a href="#"  data-toggle="dropdown" class="dropdown-toggle btn btn-primary">
+					关于我们<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">建议</a></li>
+					<li><a href="#">企业风采</a></li>
+				</ul>
+			</div>
+
+			<div class="btn-group">
+				<a href="#"  data-toggle="dropdown" class="dropdown-toggle btn btn-primary">
+					帮助<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">建议</a></li>
+					<li><a href="#">企业风采</a></li>
+				</ul>
+			</div>
+		</div>
+		<p>
+			要使菜单垂直显示只需要使用类样式<code>.btn-group-vertical</code>即可
+		</p>
+
+
+		<br/><br/><br/>
+		<div class="btn-group btn-group-justified">
+			<div class="btn-group">
+				<a href="#"  data-toggle="dropdown" class="dropdown-toggle btn btn-primary">
+					主页<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu pull-right">
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">建议</a></li>
+					<li><a href="#">企业风采</a></li>
+				</ul>
+			</div>
+			<div class="btn-group">
+				<a href="#"  data-toggle="dropdown" class="dropdown-toggle btn btn-primary">
+					关于我们<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu pull-right">
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">建议</a></li>
+					<li><a href="#">企业风采</a></li>
+				</ul>
+			</div>
+
+			<div class="btn-group">
+				<a href="#"  data-toggle="dropdown" class="dropdown-toggle btn btn-primary">
+					帮助<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu pull-right">
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">建议</a></li>
+					<li><a href="#">企业风采</a></li>
+				</ul>
+			</div>
+		</div>
+		<p>
+			两端对齐排列的按钮组这种最适合top菜单栏这种只需要使用类样式<code>.btn-group .btn-group-justified</code>
+			即可
+		</p>
+	</div>
+</body>
+</html>

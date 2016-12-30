@@ -12,7 +12,54 @@
 </head>
 <body>
 	<div class="container">
+			<div class="input-group">
+				<span class="input-group-addon">用户名</span>
+				<input class="form-control" name="username" id="username" placeholder="请输入用户名"/>
 
+			</div>
+		<div class="input-group">
+			<span class="input-group-addon">密 码</span>
+			<input class="form-control" name="pwd" id="pwd" placeholder="请输入密码"/>
+		</div>
+		<p>
+			输入框分组 主要使用到
+			<br/>
+			类样式<code>.input-group</code> <code>.input-group-addon</code><code>.form-control</code>
+		</p>
+		<br/>
+
+		<div class="input-group input-group-lg">
+			<span class="input-group-addon">
+				<input type="checkbox"/>
+			</span>
+			<input type="text" class="form-control" placeholder="复选框模式"/>
+		</div>
+	<br/>
+		<div class="input-group input-group-sm">
+			<span class="input-group-addon">
+				<input type="radio"/>
+			</span>
+			<input type="text" class="form-control" placeholder="单选框模式"/>
+		</div>
+		<br/>
+		<div class="input-group">
+			<div class="input-group-btn">
+				<button class="btn btn-primary">确 认</button>
+			</div>
+			<input type="text" class="form-control" placeholder="按钮模式">
+		</div>
+<br/>
+		<div class="input-group input-group-lg">
+			<div class="input-group-btn">
+				<button  class="btn btn-primary dropdown-toggle" data-toggle="dropdown">单号类型<span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="#">订单号</a></li>
+					<li><a href="#">运单号</a></li>
+					<li><a href="#">商家运单号</a></li>
+				</ul>
+			</div>
+			<input type="text" class="form-control" placeholder="下拉列表模式">
+		</div>
 	</div>
 </body>
 </html>

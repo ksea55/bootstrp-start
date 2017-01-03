@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>bootstrp start</title>
+	<script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">	
+	<script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/holder/holder.min.js"></script>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar navbar-default">
+			<div class="navbar-header">
+				<A href="#" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#myNavbar_collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</A>
+				<A href="#" class="navbar-brand">阿狸商家管理系统</A>
+			</div>
+			<div class="navbar-collapse collapse" id="myNavbar_collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><A href="#" >订单管理</A></li>
+						<li><A href="#">商家管理</A></li>
+						<li><A href="#">关于我们</A></li>
+						<li><A href="#">帮助</A></li>
+				</ul>
+			</div>
+		</div>
+		<p>
+			这里是基于导航条之基本构建的基础上，对于响应式布局进行扩展，在屏幕小于<768PX导航条会进行折叠.
+			<br/>
+			这里
+			<code>
+				A标签中使用到
+				<br/>class="navbar-toggle collapsed" 这里使用的类样式
+				<br/>data-toggle="collapse"
+				<br/> data-target="#myNavbar_collapse"> 目标指明下面 下面 id=<strong>myNavbar_collapse</strong> 并且这里要用 # 号
+				<br/>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				这里是三个横线的折叠图标
+			</code>
+			<br/>
+		  需要呗折叠的菜单就需要呗包裹在这个类样式	<code>class="navbar-collapse collapse"</code>
+			<br/>
+			并要为这个div 设置一个id 为上面的折叠data-target提供目标
+		</p>
+	</div>
+</body>
+</html>

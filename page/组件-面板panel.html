@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>bootstrp start</title>
+	<script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">	
+	<script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/holder/holder.min.js"></script>
+	<style type="text/css">
+	/*panel自定义我们自己的颜色*/
+		.panel-primary{
+			border-color: #b71a1a;
+		}
+	.panel-primary .panel-heading{
+			background-color: #0a0909;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!--
+		panel 是非常常用的一个组件
+		面版
+		虽然不总是必须，但是某些时候你可能需要将某些 DOM 内容放到一个盒子里。对于这种情况，可以试试面板组件。
+
+		基本实例
+		默认的 .panel 组件所做的只是设置基本的边框（border）和内补（padding）来包含内容。
+		-->
+
+		<div class="panel panel-primary">
+			<div class="panel-body">
+				这是最基本的panel 用到类样式<code>.panel</code>
+				而正文内容就用到类样式<code>.panel-body</code>
+			</div>
+		</div>
+
+		<br/>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h4 class="panel-title">Panel Title</h4>
+			</div>
+			<div class="panel-body">
+				带标题的面版
+				通过 <code>.panel-heading </code>可以很简单地为面板加入一个标题容器。你也可以通过添加设置了
+				<code>.panel-title 类的</code> <code> h1-h6</code> 标签，添加一个预定义样式的标题。
+				为了给链接设置合适的颜色，务必将链接放到带有 <code>.panel-title </code>类的标题标签内
+			</div>
+		</div>
+    <b/>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h4 class="panel-title">Panel Title</h4>
+
+			</div>
+			<div class="panel-body">
+				带脚注的面版
+				把按钮或次要的文本放入 <code>.panel-footer</code>  容器内。
+				注意面版的脚注不会从情境效果中继承颜色，因为他们并不是主要内容。
+				<br/>
+				带脚注的面版
+				把按钮或次要的文本放入 <code>.panel-footer</code>  容器内。
+				注意面版的脚注不会从情境效果中继承颜色，因为他们并不是主要内容。
+				<br/>
+				带脚注的面版
+				把按钮或次要的文本放入 <code>.panel-footer</code>  容器内。
+				注意面版的脚注不会从情境效果中继承颜色，因为他们并不是主要内容。
+				<br/>
+				带脚注的面版
+				把按钮或次要的文本放入 <code>.panel-footer</code>  容器内。
+				注意面版的脚注不会从情境效果中继承颜色，因为他们并不是主要内容。
+				<br/>
+				带脚注的面版
+				把按钮或次要的文本放入 <code>.panel-footer</code>  容器内。
+				注意面版的脚注不会从情境效果中继承颜色，因为他们并不是主要内容。
+				<br/>
+			</div>
+			<div class="panel-footer text-right">
+					此处是面板的底部,使用的是类样式<code>.panel-footer</code>
+				<a href="#" class="btn btn-info ">关闭</a>
+			</div>
+		</div>
+
+
+		<br/><br/>
+		<b/>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h4 class="panel-title">Panel Title</h4>
+			</div>
+			<div class="panel-body">
+				带表格的面版
+				为面板中不需要边框的表格添加<code> .table</code> 类，
+				是整个面板看上去更像是一个整体设计。如果是带有<code> .panel-body</code> 的面板，
+				我们为表格的上方添加一个边框，看上去有分隔效果。
+				<br/>
+				带表格的面版
+				为面板中不需要边框的表格添加<code> .table</code> 类，
+				是整个面板看上去更像是一个整体设计。如果是带有<code> .panel-body</code> 的面板，
+				我们为表格的上方添加一个边框，看上去有分隔效果。
+
+				<!--此处表格是放在类样式 panel-body 里面的-->
+				<table class="table table-striped table-bordered">
+					<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+					<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+					<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+					<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+					<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+					<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+					<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+					<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+					<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+					<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+				</table>
+			</div>
+			<br/>
+
+			<!--此处表格是放在 panel-body外面的-->
+			<table class="table table-striped table-bordered">
+					<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+				<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+				<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+				<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+				<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+				<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+				<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+				<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+				<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+				<tr><td>FQ</td><td>1243434</td><td>四川省</td><td>成都市</td><td>武侯区</td></tr>
+			</table>
+
+
+			<br><br/>
+			<!--
+				带列表组的面版
+				可以简单地在任何面版中加入具有最大宽度的列表组。
+			-->
+			<ul class="list-group">
+				<li class="list-group-item">Cras justo odio</li>
+				<li class="list-group-item">Dapibus ac facilisis in</li>
+				<li class="list-group-item">Morbi leo risus</li>
+				<li class="list-group-item">Porta ac consectetur ac</li>
+				<li class="list-group-item">Vestibulum at eros</li>
+			</ul>
+
+			<div class="panel-footer text-right">
+				此处是面板的底部,使用的是类样式<code>.panel-footer</code>
+				<a href="#" class="btn btn-info ">关闭</a>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+	</div>
+</body>
+</html>

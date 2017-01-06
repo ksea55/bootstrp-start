@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>bootstrp start</title>
+	<script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">	
+	<script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/holder/holder.min.js"></script>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="alert alert-danger">
+			Well done! You successfully read this important alert message.
+		</div>
+		<p>
+			bootstrap中的警告框就主要用到类样式<code>.alert</code>
+			其背景色调主要用是类样式<code>.alert-success、.alert-info、alert-warning、alert-danger</code>
+		</p>
+		<br/><br/>
+
+		<div class="alert alert-success alert-dismissible">
+			<button class="close"  data-dismiss="alert">&times;</button>
+			Well done! You successfully read this important alert message.
+		</div>
+		<p>
+			带关闭按钮的警告框，主要用到 类样式<code>.alert-dismissible</code>在关闭按钮中主要用到
+			<pre>data-dismiss="alert"</pre> 注意这里的关闭按钮只能用button不能用超链接A，超链接不起作用
+		</p>
+
+		<div class="alert alert-danger">
+			Well done! You successfully read this important <a href="#" class="alert-link">alert message.</a>
+		</div>
+		<p>
+			警告框中超链接主要用到类样式<code>.alert-link</code>来进行美化
+		</p>
+	</div>
+</body>
+</html>

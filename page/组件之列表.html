@@ -7,14 +7,73 @@
 	<script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/holder/holder.min.js"></script>
 	<style type="text/css">
-		.col-md-4{
-			background-color: #1b6d85;
-		}
+
 	</style>
 </head>
 <body>
 	<div class="container">
+		<ul class="list-group">
+			<li class="list-group-item list-group-item-danger">列表数据list-group-item-danger</li>
+			<li class="list-group-item list-group-item-heading">列表数据list-group-item-heading</li>
+			<li class="list-group-item list-group-item-info">列表数据list-group-item-info</li>
+			<li class="list-group-item list-group-item-success">列表数据list-group-item-success</li>
+			<li class="list-group-item list-group-item-text">列表数据list-group-item-text</li>
+			<li class="list-group-item list-group-item-warning">列表数据list-group-item-warning</li>
+			<li class="list-group-item  active">列表数据之激活active</li>
+			<!--列表中添加徽章-->
+			<li class="list-group-item  list-group-item-warning">
+				列表数据之激活active
+			<span class="badge">23</span>
+			</li>
+		</ul>
+		<br/>
+		<!--
+		链接
+		用 <a> 标签代替 <li> 标签可以组成一个全部是链接的列表组（还要注意的是，
+		我们需要将 <ul> 标签替换为 <div> 标签）。没必要给列表组中的每个元素都加一个父元素。
+			Cras justo odio
+		-->
 
+
+		<div class="list-group">
+			<A class="list-group-item list-group-item-danger">A连接 list-group-item-danger</A>
+			<A class="list-group-item list-group-item-heading">A连接 list-group-item-heading</A>
+			<A class="list-group-item list-group-item-info">A连接  list-group-item-info</A>
+			<A class="list-group-item list-group-item-success">A连接  list-group-item-success</A>
+			<A class="list-group-item list-group-item-text">A连接  list-group-item-text</A>
+			<A class="list-group-item list-group-item-warning">A连接  list-group-item-warning</A>
+			<A class="list-group-item  active">A连接  之激活active</A>
+			<!--列表中添加徽章-->
+			<A class="list-group-item  list-group-item-warning">
+				A连接  之徽章
+				<span class="badge">23</span>
+			</A>
+
+			<A class="list-group-item  list-group-item-warning disabled">
+				A连接 被禁用
+				<span class="badge">23</span>
+			</A>
+		</div>
+
+		<!--定制内容
+			列表组中的每个元素都可以是任何 HTML 内容，甚至是像下面的带链接的列表组。
+			这里才真正体现了类样式.list-group-item-heading以及类样式.list-group-item-text用处
+		-->
+		<div class="list-group">
+			<a href="#" class="list-group-item active">
+				<h4 class="list-group-item-heading">List group item heading</h4>
+				<p class="list-group-item-text">
+					Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+				</p>
+			</a>
+
+			<a href="#" class="list-group-item list-group-item-warning">
+				<h4 class="list-group-item-heading">List group item heading</h4>
+				<p class="list-group-item-text">
+					Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+				</p>
+			</a>
+		</div>
 	</div>
 </body>
 </html>

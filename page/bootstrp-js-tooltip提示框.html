@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>bootstrp start</title>
+    <script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/holder/holder.min.js"></script>
+    <style type="text/css">
+        body {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="">
+        <p>
+            这里是官方的示列 但是没有效果
+        </p>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left"
+                title="Tooltip on left">Tooltip on left
+        </button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+            Tooltip on top
+        </button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom"
+                title="Tooltip on bottom">Tooltip on bottom
+        </button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right"
+                title="Tooltip on right">Tooltip on right
+        </button>
+
+    </div>
+    <div class="">
+        <br/>
+        <br/><br/><br/><br/><br/>
+        <p>
+            这里测试过官方的不用js的方式，是没成功的，我这里成功是通过js的方式 tooltip才成功的
+        </p>
+    <button type="button" class="btn btn-primary" id="tooltip_">tooltip提示</button>
+    </div>
+</div>
+</div>
+<script>
+    $("#tooltip_").tooltip({
+        "title":"tooltip信息提示内容",//提示内容
+        "placement":"left",//placement为提示信息的位置 总共有四个值 上方：top 左边：left 下方：bottom 右方：right 默认是上方 top
+        "trigger":"hover" //以什么方式进行触发tooltip，默认是hover 还可以是其他的 click | hover | focus |
+    });
+</script>
+</body>
+</html>

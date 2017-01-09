@@ -12,6 +12,7 @@
 </head>
 <body>
 <div class="container">
+    <!--这里是bootstrap的实现方式 start-->
     <ul class="nav nav-tabs">
         <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
         <li><a href="#profile" data-toggle="tab">Profile</a></li>
@@ -41,6 +42,53 @@
             8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfo
         </div>
     </div>
+    <!--这里是bootstrap的实现方式 end-->
+
+    <br/>
+    <br/>
+    <br/>
+
+    <p>下面这里是通过js的方式来进行实现</p>
+
+
+    <ul class="nav nav-tabs" id="tabs_">
+        <li class="active"><a href="#home_">主页</a></li>
+        <li><a href="#profile_">文件</a></li>
+        <li><a href="#dropdown_">列表数据</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="home_">
+            Raw denim you probably haven't heard of them jean shorts Austin.
+            Nesciunt tofu stumptown aliqua, retro synth master cleanse.
+            Mustache cliche tempor, williamsburg carles vegan helvetica.
+            Reprehenderit butcher retro keffiyeh dreamcatcher synth.
+            Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+            Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi
+            qui.
+        </div>
+        <div id="profile_" class="tab-pane fade">
+            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1
+            labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer
+            twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl
+            cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.
+        </div>
+        <div id="dropdown_" class="tab-pane fade">
+            Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny
+            pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard
+            locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid
+            8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfo
+        </div>
+    </div>
 </div>
+<script>
+$(function () {
+    //这里是为 id为tabls_的所包含中的所有a标签添加单击事件
+    $("#tabs_ a").click(function () {
+           //这里的意思为id是tabls_所包含中的a标签添加tab事件
+           $(this).tab("show");
+    })
+})
+</script>
 </body>
 </html>

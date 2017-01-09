@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>bootstrp start</title>
+	<script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">	
+	<script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/holder/holder.min.js"></script>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p>
+			这里是bootstrp中通过data-dismiss="alert"来进行关闭警告框
+		</p>
+		<div class="alert alert-danger">
+			<span class="close" data-dismiss="alert">&times;</span>
+			<h3>警告提示</h3>
+			<p>你操作的订单号不规则，请参照文档说明进行操作</p>
+		</div>
+
+		<br/>
+		<br/>
+		<br/>
+
+		<p>
+			这里我们就不通过bootstrap的data-dismiss="alert"来关闭警告框，而是通过js来关闭
+		</p>
+		<div class="alert alert-danger">
+			<span class="close" id="alert-close">&times;</span>
+			<h3>警告提示</h3>
+			<p>你操作的订单号不规则，请参照文档说明进行操作</p>
+		</div>
+	</div>
+<script>
+	//这里通过js就可以关闭警告框alert，与data-dismiss一样的效果
+	$("#alert-close").click(function () {
+        $("#alert-close").alert("close");
+    })
+</script>
+
+</body>
+</html>

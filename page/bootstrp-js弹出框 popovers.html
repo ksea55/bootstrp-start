@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>bootstrp start</title>
+    <script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/holder/holder.min.js"></script>
+    <style type="text/css">
+        body {
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p>
+        这里 button中的内容 type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"
+        data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover
+        来自官方文档 但是在这里并没有什么效果
+    </p>
+    <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"
+            data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover
+    </button>
+
+    <br/>   <br/>   <br/>   <br/>   <br/>   <br/>   <br/>
+    <p>
+        同理 这里我们使用js来进行操作
+    </p>
+
+    <button id="popover_" class="btn btn-lg btn-danger">popover to js click
+    </button>
+</div>
+<script>
+    $("#popover_").popover({
+        "title":"操作提示", //标题信息
+        "content":"对不起你输入的订单号有误!<br/>友情提示：订单号只能是数字和字母的组合", //提示信息内容
+        "html":true, //这里html默认false，在content中的<br/>会照样显示，当为true当将解析成html语法
+        "placement":"top", //placement 提示信息显示的位置，默认是right，另外还有 top，left，bottom
+        "trigger":"hover" //popover 以什么方式出发，默认是click 其他还有 click | hover | focus | manual
+    });
+</script>
+</body>
+</html>

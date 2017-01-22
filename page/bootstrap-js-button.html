@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>bootstrp start</title>
+    <script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/holder/holder.min.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <button id="export_" class="btn btn-danger btn-lg" data-loading-text="正在导出数据.....">导 出</button>
+    <script>
+        $('#export_').on('click', function () {
+            var $btn = $(this).button('loading'); //这里的参数 loading是固定的
+
+
+            // todo 这里就可以做你想要实现的代码
+
+
+            setTimeout(function () {
+                $btn.button('reset')  //重置会原来
+            }, 2000)
+
+        })
+    </script>
+
+    <br/><br/><br/><br/><br/>
+    <button id="export_id" class="btn btn-info btn-lg" data-loading-text="正在导出数据....." data-complete-text="导出">导 出</button>
+    <script>
+        $("#export_id").on("click",function () {
+            var obj=$(this).button("loading");
+            // todo 你的程序代码......
+            setTimeout(function () {
+                obj.button("complete");
+            },2000);
+        })
+    </script>
+
+    <br/><br/><br/>
+    <p>
+        复选框 按钮组
+    </p>
+    技能:
+        <div class="btn-group">
+            <label class="btn btn-info">
+                <input type="checkbox" name="chk"/>  Java
+            </label>
+            <label class="btn btn-info">
+                <input type="checkbox" name="chk"/>  C#
+            </label>
+            <label class="btn btn-info">
+                <input type="checkbox" name="chk"/>  Oracle
+            </label>
+            <label class="btn btn-info">
+                <input type="checkbox" name="chk"/>  Javascrpt
+            </label>
+            <label class="btn btn-info">
+                <input type="checkbox" name="chk"/>  Shiro
+            </label>
+        </div>
+<!--这两个的区别在于 data-toggle="buttons" 单选框一样 只需要 把 input type设置成 radio即可  name相等 互斥就行-->
+   业务爱好: <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-info">
+            <input type="checkbox" name="chk"/>  篮球
+        </label>
+        <label class="btn btn-info">
+            <input type="checkbox" name="chk"/>  足球
+        </label>
+        <label class="btn btn-info">
+            <input type="checkbox" name="chk"/>  手游
+        </label>
+        <label class="btn btn-info">
+            <input type="checkbox" name="chk"/>  唱歌
+        </label>
+        <label class="btn btn-info">
+            <input type="checkbox" name="chk"/>  跳舞
+        </label>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>bootstrp start</title>
+    <script type="text/javascript" src="../js/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../js/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="../js/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/holder/holder.min.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="panel-group" id="panel_group">
+        <div class="panel panel-primary" id="orderManager_M">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <a href="#orderManager_C" data-toggle="collapse" data-parent="#orderManager_M">订单管理</a>
+                </h3>
+            </div>
+            <!--这里的in当页面加载完之后panel-body 是展开的-->
+            <div class="panel-collapse collapse in"  id="orderManager_C">
+                <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-primary" id="customerManager_M">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <a href="#customerManager_C" data-toggle="collapse" data-parent="#customerManager_M">客户管理</a>
+                </h3>
+            </div>
+            <div class="panel-body panel-collapse collapse" id="customerManager_C">
+                客户管理 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+        <div class="panel panel-primary" id="dataManager_M">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <a href="#dataManager_C" data-parent="#dataManager_M" data-toggle="collapse">数据管理</a>
+                </h3>
+            </div>
+            <div id="dataManager_C" class="panel-collapse collapse">
+                <div class="panel-body">数据中心Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                    nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                    coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                    sustainable VHS.
+                </div>
+            </div>
+
+        </div>
+        <!--这里使用的data-parent使用的panel-group的id-->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <a href="#dataManager_" data-parent="#panel_group" data-toggle="collapse">数据管理</a>
+                </h3>
+            </div>
+            <div id="dataManager_" class="panel-collapse collapse">
+                <div class="panel-body">数据中心Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                    nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                    coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                    sustainable VHS.
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+<p>
+    总结:
+    bootstrap 中提供了非常便利，这里我们主要用到 类样式<br/>
+    <code>.panel-group</code> 然后在panel-group中包含多个面板<code>.panel</code><br/>
+    在面板中 我们设置了它对应的 id，并且在panel-body 中的内容我们也设置了 id<br/>
+    通过在.panel-header 中的 data-parent 指明 panel的id，href 指明 所要显示的 panel-body的id<br/>
+    data-toggle=collapse 就能实现<br/>
+    当让.panel-body 我们需要有一个div 来进行包含 并设置 <code>class="panel-collapse collapse"</code><br/>
+    当然这里我们也可以将 <code>class="panel-collapse collapse"</code> 直接与.panel-body 放在一起<br/>
+    但是动画效果 有所区别，用div包裹起来的动画效果更流畅好看<br/>
+</p>
+</div>
+</body>
+</html>

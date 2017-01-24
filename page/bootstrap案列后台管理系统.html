@@ -13,11 +13,16 @@
 		.navbar-right{
 			margin-right: 25px;
 		}
+#left_menu{
+ margin: 50px 0px;
+ width: 200px;
+background-color: antiquewhite;
+}
 	</style>
 </head>
 <body>
 	<!--顶部导航条-->
-	<div class="navbar navbar-inverse navbar-static-top">
+	<div class="navbar  navbar-inverse navbar-static-top">
 		<!--顶部菜单栏 start-->
 		<div class="navbar-header">
 			<button class="collapsed navbar-toggle" data-target="#navbar_content" data-toggle="collapse">
@@ -36,9 +41,14 @@
 		<!--顶部菜单栏 end-->
 
 		<!--左侧菜单 start-->
-		<div class="nav">
-			<ul> </ul>
-		</div>
+
+			<ul class="nav nav-pills  nav-stacked" id="left_menu">
+				<li class=""><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;系统管理 &nbsp;<span class="glyphicon glyphicon-menu-right pull-right"></span></a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;分拣管理</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-plane"></span>&nbsp;运输管理</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;信息管理</a></li>
+			</ul>
+
 		<!--左侧菜单 end-->
 	</div>
 </body>

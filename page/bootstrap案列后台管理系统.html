@@ -13,16 +13,23 @@
 		.navbar-right{
 			margin-right: 25px;
 		}
-#left_menu{
- margin: 50px 0px;
- width: 200px;
-background-color: antiquewhite;
-}
+		/* 超小屏幕（手机，小于 768px） */
+		/* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+
+		/* 小屏幕（平板，大于等于 768px） */
+		@media (min-width: 768px) {
+			#left_menu{
+				width: 250px;
+				margin-top: 11px;
+				position: absolute;
+				z-index: 1;
+			}
+		}
 	</style>
 </head>
 <body>
 	<!--顶部导航条-->
-	<div class="navbar  navbar-inverse navbar-static-top">
+	<div class="navbar  navbar-default navbar-static-top">
 		<!--顶部菜单栏 start-->
 		<div class="navbar-header">
 			<button class="collapsed navbar-toggle" data-target="#navbar_content" data-toggle="collapse">
@@ -41,14 +48,55 @@ background-color: antiquewhite;
 		<!--顶部菜单栏 end-->
 
 		<!--左侧菜单 start-->
+		<div class="navbar-default navbar-collapse" id="left_menu">
+			<ul class="nav">
+				<li>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="请输入你要查找的内容!">
+						<span class="input-group-btn">
+							<button class="btn btn-info">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				</li>
+				<li>
+					<a href="#systemManager" data-toggle="collapse"><span class="glyphicon glyphicon-home"></span>&nbsp;系统管理 &nbsp;<span class="glyphicon glyphicon-menu-right pull-right"></span></a>
+					<ul id="systemManager" class="nav collapse">
+						<li><span class="glyphicon glyphicon-lock"></span> &nbsp;权限设置</li>
+						<li><span class="glyphicon glyphicon-list-alt"></span>&nbsp;基础设置</li>
+						<li><span class="glyphicon glyphicon-leaf"></span>&nbsp;菜单设置</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#tmsManager" data-toggle="collapse"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;分拣管理 &nbsp;<span class="glyphicon glyphicon-menu-right pull-right"></span></a>
+					<ul id="tmsManager" class="nav collapse">
+						<li><span class="glyphicon glyphicon-lock"></span> &nbsp;逐单入库</li>
+						<li><span class="glyphicon glyphicon-list-alt"></span>&nbsp;批量入库</li>
+						<li><span class="glyphicon glyphicon-leaf"></span>&nbsp;逐单出库</li>
+					</ul>
+				</li>
 
-			<ul class="nav nav-pills  nav-stacked" id="left_menu">
-				<li class=""><a href="#"><span class="glyphicon glyphicon-home"></span>&nbsp;系统管理 &nbsp;<span class="glyphicon glyphicon-menu-right pull-right"></span></a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>&nbsp;分拣管理</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-plane"></span>&nbsp;运输管理</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;信息管理</a></li>
+				<li>
+					<a href="#ysManager" data-toggle="collapse"><span class="glyphicon glyphicon-plane"></span>&nbsp;运输管理 &nbsp;<span class="glyphicon glyphicon-menu-right pull-right"></span></a>
+					<ul id="ysManager" class="nav collapse">
+						<li><span class="glyphicon glyphicon-lock"></span> &nbsp;车辆管理</li>
+						<li><span class="glyphicon glyphicon-list-alt"></span>&nbsp;GPS管理</li>
+						<li><span class="glyphicon glyphicon-leaf"></span>&nbsp;车型管理</li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="#infoManager" data-toggle="collapse"><span class="glyphicon glyphicon-envelope"></span>&nbsp;信息管理 &nbsp;<span class="glyphicon glyphicon-menu-right pull-right"></span></a>
+					<ul id="infoManager" class="nav collapse">
+						<li><span class="glyphicon glyphicon-lock"></span> &nbsp;基础信息设置</li>
+						<li><span class="glyphicon glyphicon-list-alt"></span>&nbsp;订单号设置</li>
+						<li><span class="glyphicon glyphicon-leaf"></span>&nbsp;运单号设置</li>
+					</ul>
+				</li>
+
 			</ul>
-
+		</div>
 		<!--左侧菜单 end-->
 	</div>
 </body>
